@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <notas.h>
 
 int main(void){
 	int opcao;
@@ -10,6 +10,7 @@ int main(void){
 
 		switch(opcao){
 			case 1: break;
+				
 			case 2: break;
 			case 3: break;
 			default: printf("Opção Inválida");
