@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <notas.h>
+#include <string.h>
 
 void adicionarNota(char *nome){
-    char txt = ".txt"
+    char txt[] = ".txt";
     char nomeArquivo[100];
 
     snprintf(nomeArquivo, sizeof(nomeArquivo), "%s%s", nome, txt);
@@ -19,6 +20,7 @@ void adicionarNota(char *nome){
     char texto[200];
 
     printf("Digite o conteúdo da nota:\n");
+    
     fgets(texto, sizeof(texto), stdin);
 
     texto[strcspn(texto, "\n")] = '\0';

@@ -1,0 +1,1 @@
+Essa é a primeira nota de teste, ainda tenho correções a fazer sobre o buffer ficar lendo as quebras de linha, mas essa é a primeira tentativa
