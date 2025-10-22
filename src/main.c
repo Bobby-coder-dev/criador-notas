@@ -18,8 +18,8 @@ int main(void){
 				adicionarNota(nomeNota);
 				break;				
 			case 2:
-				//função de listagem
-			       	break;
+				listaNotas();
+			    break;
 			case 3:
 				return 0;
 			       	break;

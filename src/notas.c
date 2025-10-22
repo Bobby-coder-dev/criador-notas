@@ -1,17 +1,18 @@
+#include <dirent.h>
 #include <stdio.h>
 #include <notas.h>
 #include <string.h>
+
 
 void adicionarNota(char *nome){
     char txt[] = ".txt";
     char nomeArquivo[100];
 
-    snprintf(nomeArquivo, sizeof(nomeArquivo), "%s%s", nome, txt);
-
+    snprintf(caminho, sizeof(caminho), "NotasCriadas/%s.txt", nome);
 
     FILE *arquivo;
 
-    arquivo = fopen(nomeArquivo, "w+");
+    arquivo = fopen(caminho, "w+");
 
     if (arquivo == NULL){
         printf("Não foi possível criar o arquivo"); 
@@ -32,4 +33,8 @@ void adicionarNota(char *nome){
     }
 
     return;
+}
+
+void listaNotas(){
+
 }
